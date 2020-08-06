@@ -584,16 +584,66 @@
           </svg>
         </button>
         <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
-        <form class="modal-form js-speaker-form">
-          <input type="text" />
-          <input type="tel" />
-          <input type="email" />
-          <textarea name="" id="" cols="30" rows="10"></textarea>
-          <input type="checkbox" name="" id="" />
-          <label for=""
-            >Соглашаюсь с рассылкой и принимаю
-            <a href="">Условия договора</a></label
-          >
+        <form class="modal-form js-speaker-form" autocomplete="off">
+          <label class="modal-form__field">
+            <input
+              class="modal-form__input"
+              type="text"
+              name="name"
+              placeholder=" "
+            />
+            <span class="modal-form__label">Имя</span>
+            <svg class="modal-form__icon">
+              <use href="./image/sprite.svg#icon-people"></use>
+            </svg>
+          </label>
+          <label class="modal-form__field">
+            <input
+              class="modal-form__input"
+              type="tel"
+              name="phone"
+              placeholder=" "
+            />
+            <span class="modal-form__label">Телефон</span>
+            <svg class="modal-form__icon">
+              <use href="./image/sprite.svg#icon-phone"></use>
+            </svg>
+          </label>
+          <label class="modal-form__field">
+            <input
+              class="modal-form__input"
+              type="email"
+              name="mail"
+              placeholder=" "
+            />
+            <span class="modal-form__label">Почта</span>
+            <svg class="modal-form__icon">
+              <use href="./image/sprite.svg#icon-email"></use>
+            </svg>
+          </label>
+          <textarea
+            class="modal-form__comment"
+            name=""
+            id=""
+            placeholder="Комментарий"
+          ></textarea>
+
+          <label class="modal-form__agreement">
+            <input
+              class="modal-form__agreement-checkbox"
+              type="checkbox"
+              name="topic"
+              value="Соглашаюсь с рассылкой и принимаю Условия договора"
+              id=""
+            />
+            <span class="modal-form__agreement-icon"></span>
+            <span
+              >Соглашаюсь с рассылкой и принимаю
+              <a class="modal-form__agreement-link" href="">
+                Условия договора</a
+              ></span
+            >
+          </label>
           <button class="modal-form__button" type="submit">Отправить</button>
         </form>
       </div>
