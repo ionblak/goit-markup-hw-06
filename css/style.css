@@ -565,6 +565,7 @@ img {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms var(--transition);
 }
 .backdrop-hidden {
   opacity: 0;
@@ -680,7 +681,7 @@ img {
   border: 1px solid #2196f3;
   outline: none;
 }
-
+/* стилизация чекбокса */
 .modal-form__agreement {
   display: flex;
   align-items: center;
