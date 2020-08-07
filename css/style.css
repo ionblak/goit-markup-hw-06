@@ -718,6 +718,8 @@ img {
   position: relative;
   display: inline-block;
   padding-left: 25px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
 
   font-size: 14px;
