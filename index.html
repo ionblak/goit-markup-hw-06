@@ -576,6 +576,7 @@
         </div>
       </div>
     </footer>
+    <!-- модаоьное окно -->
     <div class="backdrop backdrop-hidden" data-modal>
       <div class="modal">
         <button class="modal-button" data-modal-close>
@@ -626,22 +627,17 @@
             name="comment"
             placeholder="Комментарий"
           ></textarea>
-
-          <label class="modal-form__agreement">
-            <input
-              class="modal-form__agreement-checkbox"
-              type="checkbox"
-              name="topic"
-              value="Соглашаюсь с рассылкой и принимаю Условия договора"
-            />
-            <span class="modal-form__agreement-icon"></span>
-            <span
-              >Соглашаюсь с рассылкой и принимаю
-              <a class="modal-form__agreement-link" href="">
-                Условия договора</a
-              ></span
-            >
-          </label>
+          <input
+            class="modal-form__agreement-checkbox"
+            type="checkbox"
+            id="checkbox"
+          />
+          <label class="modal-form__agreement-label" for="checkbox"
+            >Соглашаюсь с рассылкой и принимаю
+            <a class="modal-form__agreement-link" href="">
+              Условия договора</a
+            ></label
+          >
           <button class="modal-form__button" type="submit">Отправить</button>
         </form>
       </div>
